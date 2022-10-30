@@ -1,0 +1,325 @@
+/*import fonts from fonts.css file*/
+
+@import url(./fonts.css);
+
+/*import css variables*/
+
+@import url(./partials/_variables.css);
+
+/* import global css*/
+
+@import url(./partials/_gloval.css);
+
+/*start nevigetion */
+
+
+
+.header_area .main-menu .navbar {
+    padding: 1rem 5rem;
+}
+
+.header_area .main-menu .nav-item .nav-link {
+    font-family: var(--roboto);
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 1rem;
+    color: var(--title-color);
+}
+
+.header_area .main-menu .navbar-nav .active {
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header_area .main-menu .nav-item .nav-link:hover {
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+/*end navbar*/
+
+
+/*benner area style*/
+
+.site-main .site-benner {
+    background: url("../img/banner/home-banner.png") no-repeat 0% 50%;
+}
+
+.site-main .site-benner .site-title h3 {
+    padding-top: 35%;
+    font-weight: 500;
+}
+
+.site-main .site-benner .site-title h3:after {
+    content: '';
+    height: 2px;
+    width: 40vh;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+}
+
+.site-main .site-benner .site-title h1 {
+    font-size: 4rem
+}
+
+.site-main .site-benner .site-title h4 {
+    font-size: 1.5rem;
+}
+
+.site-main .site-benner .benner-image>img {
+    padding: 7rem 0;
+    width: 90rem;
+}
+
+
+/*end benner area style*/
+
+
+/* start about area */
+
+.site-main .about_area {
+    padding: .5rem 5rem;
+}
+
+.site-main .about_area .about-title h2>span {
+    display: block;
+    font: normal bold 49px/ 60px var(--roboto);
+    letter-spacing: 15px;
+}
+
+.site-main .about_area .about-title .peragraph>p {
+    padding: .4rem 0;
+}
+
+
+/* end about area */
+
+
+/* start brand area */
+
+.site-main .brand-area {
+    padding: 1rem 10rem;
+    margin-bottom: 4rem;
+}
+
+.site-main .brand-area .fast-row .col-lg-4 {
+    display: flex;
+    justify-content: center;
+}
+
+.site-main .brand-area .fast-row .col-lg-4>.single-brand {
+    border: 1px solid var(--bordercolor);
+    text-align: center;
+    padding: 1.8rem 0rem;
+    margin: 1rem 0;
+    width: 180px;
+    height: 100px;
+    cursor: pointer;
+    transition: transfrom .4s ease;
+}
+
+.site-main .brand-area .fast-row .col-lg-4>.single-brand>img {
+    width: 50%;
+}
+
+.site-main .brand-area .fast-row .col-lg-4>.single-brand:hover {
+    box-shadow: var(--box-shadow);
+    transform: scale(1.1);
+}
+
+.site-main .brand-area .fast-row .col-lg-4>.single-brand:hover>img {
+    filter: brightness(0.15);
+}
+
+.site-main .brand-area .exprince-area {
+    padding-left: 1rem;
+}
+
+.site-main .brand-area .exprince-area .year-area {
+    background: url('../img/client-info-bg.png') no-repeat 45px 20px;
+    padding: 2rem 0;
+    width: 40rem;
+    height: 18rem;
+    padding-left: 8rem;
+    position: relative;
+}
+
+.site-main .brand-area .exprince-area .year-area .bg-paner {
+    position: absolute;
+    left: -190px;
+    top: 0%;
+    background: #e029290a;
+    width: 400px;
+    height: 400px;
+    margin-left: 340px;
+    z-index: -1;
+}
+
+.site-main .brand-area .exprince-area .year-area .year {
+    font: normal bold 84px/40px var(--roboto);
+    color: var(--prinary-color2);
+}
+
+.site-main .brand-area .exprince-area .year-area h2>span {
+    display: block;
+    font: normal 600 35px/45px var(--roboto);
+    text-transform: uppercase;
+}
+
+.site-main .brand-area .exprince-area .call-area {
+    padding-left: 10rem;
+}
+
+.site-main .brand-area .exprince-area .call-area .coll-now>a {
+    display: block;
+    text-decoration: none;
+    font-family: var(--roboto);
+}
+
+
+/* end brand area */
+
+
+/* services area  */
+
+.site-main .services-area {
+    padding: 3rem 2rem;
+}
+
+.site-main .services-area .services-title {
+    padding: 0 14rem;
+}
+
+.site-main .services-area .services-title h1 {
+    font-size: 35px;
+}
+
+.site-main>.services-area .services {
+    background: rgba(248, 252, 253, 0.973);
+    padding: 2rem 0;
+    width: 16rem;
+    margin: 5rem .5rem;
+    transition: box-shadow .7s ease;
+}
+
+.site-main>.services-area .services:hover {
+    box-shadow: var(--box-shadow);
+}
+
+
+/* End services area  */
+
+/* project area  */
+.site-main .project-area {
+    padding: 7rem 0;
+}
+.site-main .project-area .button-group button {
+    background: transparent;
+    border: none;
+    font: normal 500 16px/130px var(--roboto);
+    text-transform: uppercase;
+}
+.site-main .project-area .button-group button + button {
+    padding-left: 3rem;
+}
+
+.site-main .project-area .grid .our-project > .title h4 {
+    font: normal 700 25px/12px var(--roboto);
+}
+.site-main .project-area .grid .our-project .img a:hover img {
+    filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+}
+/* End project area  */
+
+/* about me  */
+.site-main .about-me .about-title p{
+    padding: 1rem 7rem;
+}
+.site-main .about-me .clint {
+    background: #ffffff10;
+    box-shadow: var(--box-shadow);
+    margin: 3rem 0rem;
+}
+.site-main .about-me .clint .clind-img {
+    padding: 2rem;
+}
+.site-main .about-me .clint .about-clind {
+    padding-top:2rem;
+
+}
+.site-main .about-me .clint .about-clind h4 {
+    font: normal 500 21px/20px var(--roboto);
+}
+.site-main .about-me .clint .about-clind p {
+    font-size: 14px;
+}
+.site-main .about-me .owl-carousel .owl-item {
+    display: flex;
+    justify-content: center;
+    padding: 0 1.5rem;
+} 
+.site-main .about-me .owl-carousel .owl-dots .owl-dot.active span {
+    background: var(--prinary-color);
+    width: 12px;
+    height: 12px;
+}
+/* End about me  */
+/* subscribe area  */
+.site-main .subscribeus-area .subscribe {
+    background: url("../img/subscribe-bg.png") no-repeat;
+    padding:  10rem 0;
+    margin: 3rem auto;
+}
+.site-main .subscribeus-area .subscribe .subscribe-title h4 {
+    font: normal 700 30px / 30px var(--roboto);
+    color: #fff; 
+}
+.site-main .subscribeus-area .subscribe .subscribe-title  p {
+    color: whitesmoke;
+    padding: 1rem 4rem  ;
+}
+.site-main .subscribeus-area .subscribe form .input-textbox input{
+    width: 400px;
+    padding: 1rem 2rem;
+    border: 1px solid whitesmoke;
+    background: transparent;
+    color: whitesmoke;
+    font:normal 500 17px/20px var(--roboto);
+}
+.site-main .subscribeus-area .subscribe form .input-textbox input::placeholder {
+    color: whitesmoke;
+}
+.site-main .subscribeus-area .subscribe form .btn-submit button {
+    background: whitesmoke;
+    color: #000;
+    padding: 1rem 2rem;
+    font:normal 500 17px/20px var(--roboto);
+}
+/* End subscribe area  */
+
+/*  Footer area  */
+footer.footer-area {
+    padding: 5rem 0rem;
+    background: url('../img/footer-bg.png') no-repeat;
+
+}
+footer.footer-area .social h5 {
+    font:normal 500 23px/30px var(--roboto);
+}
+footer.footer-area .social a > i {
+    font-size: 22px;
+    padding: 2rem;
+    color: var(--bordercolor);
+}
+
+footer.footer-area .social a:hover > i {
+    color: var(--prinary-color);
+}
+/* End footer area  */
